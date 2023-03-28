@@ -57,7 +57,7 @@ h6 {
     margin: 0;
 }
 .btn,
-.modal-form .btn {
+#mc_embed_signup .modal-form .button.btn {
     font-family: 'Barlow', sans-serif;
     display: block;
     border-radius: 39px;
@@ -82,7 +82,7 @@ h6 {
     opacity: 1;
     color: #303030;
 }
-.modal-form .btn:hover {
+#mc_embed_signup .modal-form .button.btn:hover {
     background-color: #ffb400;
 }
 .btn::after {
@@ -492,7 +492,7 @@ h6 {
     flex-direction: column;
     gap: 1rem;
 }
-.modal-form input {
+#mc_embed_signup .modal-form .mc-field-group input {
     width: 100%;
     background-color: #F6F6F6;
     border: 2px solid #DDDDDD;
@@ -500,10 +500,14 @@ h6 {
     font-weight: 500;
     font-size: 18px;
     padding: 17px;
+    text-indent: 0;
 }
-/* .modal-form .btn {
-    margin: 1rem auto 0;
-} */
+#mc_embed_signup .modal-form .mc-field-group,
+#mc_embed_signup .modal-form .mc-field-group.size1of2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 @media (min-width: 575px) {
     .header .logo img {
@@ -562,7 +566,7 @@ h6 {
         font-size: 44px;
     }
     .btn,
-    .modal-form .btn  {
+    #mc_embed_signup .modal-form .button.btn  {
         font-size: 22px;
         max-width: 370px;
         padding: 29.5px 17px;
