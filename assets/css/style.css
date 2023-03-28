@@ -486,7 +486,7 @@ h6 {
     margin: 0 auto;
     max-width: 100%;
 }
-.modal-form .modal-title {
+#mc_embed_signup .modal-form .modal-title {
     text-align: center;
     color: #181818;
     font-weight: 700;
@@ -694,13 +694,13 @@ h6 {
         margin-top: -170px;
         padding: 220px 0 55px;
     }
-    .modal .modal-form .modal-title {
+    #mc_embed_signup .modal-form .modal-title {
         font-size: 24px;
         padding: 0 15px;
         margin: 0;
     }
     .modal-body {
         text-align:center;
-        padding: 29px 20px 58px;
+        padding: 20px 20px 58px;
     }
 }
