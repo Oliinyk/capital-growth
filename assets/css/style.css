@@ -533,6 +533,10 @@ h6 {
     text-align: center;
     width: 100%;
 }
+.modal-description {
+    font-size: 13px;
+    line-height: 20px; 
+}
 
 @media (min-width: 575px) {
     .header .logo img {
