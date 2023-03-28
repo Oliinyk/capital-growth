@@ -496,7 +496,7 @@ h6 {
 }
 .modal-body {
     text-align:center;
-    padding: 20px 20px;
+    padding: 20px;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -534,8 +534,10 @@ h6 {
     width: 100%;
 }
 .modal-description {
+    text-align: center;
     font-size: 13px;
     line-height: 20px; 
+    padding: 10px 0 0;
 }
 
 @media (min-width: 575px) {
@@ -705,6 +707,6 @@ h6 {
     }
     .modal-body {
         text-align:center;
-        padding: 20px 20px 58px;
+        padding: 20px 20px 35px;
     }
 }
