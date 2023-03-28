@@ -159,7 +159,6 @@ h6 {
     line-height: 1.5;
 }
 .hero .container {
-    /* max-width: 730px; */
     max-width: 810px;
 }
 .subtitle {
@@ -328,7 +327,6 @@ h6 {
     margin: 0 auto 38px;
 }
 .result-wrap {
-    /* column-count: 2; */
     column-gap: 20px;
 }
 .result-item {
@@ -428,7 +426,7 @@ h6 {
     display: none;
     position: fixed;
     z-index: 3;
-    padding: 10vh 15px 0;
+    padding: 3vh 15px 0;
     left: 0;
     top: 0;
     width: 100%;
@@ -522,6 +520,14 @@ h6 {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+#mc_embed_signup .modal-form div.response {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
 }
 
 @media (min-width: 575px) {
