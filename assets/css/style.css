@@ -66,6 +66,7 @@ h6 {
     line-height: 1;
     font-weight: 600;
     width: 100%;
+    height: auto;
     max-width: 248px;
     border: none;
     color: #303030;
@@ -78,6 +79,19 @@ h6 {
     cursor: pointer;
     transition: .2s all;
 }
+#mc_embed_signup .modal-form .helper_text {
+    padding: 0;
+    margin: 0;
+}
+#mc_embed_signup #mc-embedded-subscribe-form .modal-form div.mce_inline_error {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
 .btn:hover {
     opacity: 1;
     color: #303030;
@@ -475,6 +489,7 @@ h6 {
     max-width: 100%;
 }
 .modal-title {
+    text-align: center;
     color: #181818;
     font-weight: 700;
     font-size: 20px;
