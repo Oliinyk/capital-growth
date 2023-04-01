@@ -17,13 +17,15 @@ function closeModal() {
 }
  
 // Event listeners for opening the modal 
-btn1.onclick = function() { 
+btn1.onclick = function() {
   openModal(); 
 }
 
-btn2.onclick = function() { 
-  openModal(); 
-}
+// if(btn2.length) {
+  btn2.onclick = function() {
+    openModal(); 
+  }
+// }
  
 // Event listener for closing the modal 
 closeBtn.onclick = function() { 
