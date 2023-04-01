@@ -16,16 +16,18 @@ function closeModal() {
   modal.style.display = "none";
 }
  
-// Event listeners for opening the modal 
-btn1.onclick = function() {
-  openModal(); 
+// Event listeners for opening the modal
+if(btn1) {
+  btn1.onclick = function() {
+    openModal(); 
+  }
 }
 
-// if(btn2.length) {
+if(btn2) {
   btn2.onclick = function() {
     openModal(); 
   }
-// }
+}
  
 // Event listener for closing the modal 
 closeBtn.onclick = function() { 
