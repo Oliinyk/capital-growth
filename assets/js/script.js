@@ -47,7 +47,7 @@ window.onclick = function(event) {
 
 
 $('#mc-embedded-subscribe-form').submit(function (e) {
-  if ($(this).find('input.mce_inline_error')) {
+  if ($(this).find('input.mce_inline_error').length) {
     alert("Error!")
   } else {
     location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
