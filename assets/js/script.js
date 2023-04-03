@@ -5,6 +5,8 @@ var modal = document.getElementById("myModal");
 var btn1 = document.getElementById("openModalJs");
 var btn2 = document.getElementById("openModalJs2");
 var closeBtn = document.getElementById("closeModalJs");
+
+
  
 // Function to open the modal 
 function openModal() {
@@ -40,3 +42,14 @@ window.onclick = function(event) {
     closeModal(); 
   } 
 }
+
+
+
+
+$('#mc-embedded-subscribe-form').submit(function (e) {
+  if ($(this).find('.mce_inline_error')) {
+    alert("This form was submitted!")
+  } else {
+    location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
+  }
+});
