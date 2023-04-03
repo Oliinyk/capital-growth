@@ -58,10 +58,15 @@ window.onclick = function(event) {
 
 $('.modal-body .btn').click( function(e) {
   e.preventDefault();
-  if ($(this).closest('#mc-embedded-subscribe-form').find('input.mce_inline_error').length) {
+  if ($(this).closest('#mc-embedded-subscribe-form').find('input.mce_inline_error').length || $(this).closest('#mc-embedded-subscribe-form').find('input.required').val().length === 0) {
     console.log("Error")
   } else {
     $('#mc-embedded-subscribe-form').submit();
-    location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
+    
+
+    window.setTimeout( function(){
+      location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
+    }, 500 );
+
   }
 })
