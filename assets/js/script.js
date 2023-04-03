@@ -46,27 +46,36 @@ window.onclick = function(event) {
 
 
 
-// $('#mc-embedded-subscribe-form').submit(function (e) {
-//   if ($(this).find('input.mce_inline_error').length) {
-//     alert("Error!")
-//   } else {
-//     location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
-//   }
-// });
+
 
 
 
 $('.modal-body .btn').click( function(e) {
   e.preventDefault();
-  if ($(this).closest('#mc-embedded-subscribe-form').find('input.mce_inline_error').length || $(this).closest('#mc-embedded-subscribe-form').find('input.required').val().length === 0) {
-    console.log("Error")
+
+  $(this).closest('#mc-embedded-subscribe-form').find('input.required').each(function() {
+    if ($(this).val() == "") {
+      e.preventDefault();
+
+      console.log('Error 2')
+    }
+  })
+
+  // || $(this).closest('#mc-embedded-subscribe-form').find('input.required').val().length === 0
+
+
+  if ($(this).closest('#mc-embedded-subscribe-form').find('input.mce_inline_error').length) {
+    console.log("Error 1")
   } else {
     $('#mc-embedded-subscribe-form').submit();
     
-
     window.setTimeout( function(){
       location.href = 'https://oliinyk.github.io/capital-growth/conversion-magic.html'
     }, 500 );
 
   }
 })
+
+
+
+
