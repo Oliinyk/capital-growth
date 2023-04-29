@@ -939,7 +939,7 @@ h6 {
     filter: none;
 }
 .free-bonus {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .free-bonus-one .free-bonus-item {
     background: #E9F7EF;
@@ -1124,7 +1124,7 @@ h6 {
 
 /* roi-section */
 .roi-section {
-    padding: 35px 0;
+    padding: 0 0 70px;
 }
 .roi-wrap {
     display: flex;
@@ -1139,7 +1139,7 @@ h6 {
 .roi-description {
     font-size: 17px;
     color: #181818;
-    line-height: 1.6;
+    line-height: 1.5;
     width: 100%;
     max-width: 650px;
     padding: 30px 0 0;
@@ -1148,7 +1148,7 @@ h6 {
     margin: 0 auto;
 }
 .roi-description p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.7rem;
 }
 .roi-section .section-img {
     max-width: 480px;
@@ -1156,15 +1156,14 @@ h6 {
 }
 .roi-img {
     order: 1;
-    margin: 0 auto;
+    margin: 17px auto 0;
 }
 
 /* results-section */
-.results-section {
-    margin-bottom: 20px;
-}
+
 .results-wrap {
     background: #F6F6F6;
+    padding: 0 0 66px;
 }
 .results-row {
     display: flex;
@@ -1235,10 +1234,10 @@ h6 {
 }
 .results-section .table div:last-child {
     border-left: 0;
-    padding: 7px 25px;
+    padding: 7px 20px;
 }
 .results-section .table > div {
-    padding: 12px 20px;
+    padding: 12px 19px;
     background-color: #F6F6F6;
     border-bottom: 1px solid #D3D3D3;
 }
@@ -1269,7 +1268,7 @@ h6 {
     background-image: url('../images/underline.svg');
     background-repeat: no-repeat;
     background-position: 20px calc(100% - 10px);
-    background-size: 155px;
+    background-size: 125px;
 }
 
 /* promotion-section */
@@ -1321,18 +1320,18 @@ h6 {
 }
 .three-hoops-section {
     background-color: #F6F6F6;
-    padding-bottom: 95px;
+    padding-bottom: 75px;
 }
 .alert-description {
     max-width: 780px;
     background-color: #fff;
-    padding: 35px 20px 40px;
+    padding: 35px 26px 32px;
     font-weight: 600;
     font-size: 17px;
-    line-height: 1.64;
+    line-height: 1.55;
     text-align: center;
     color: #181818;
-    margin: 32px auto 50px;
+    margin: 32px auto 38px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
@@ -1343,16 +1342,17 @@ h6 {
 .hoops-description {
     text-align: center;
     font-size: 17px;
-    line-height: 1.64;
+    line-height: 1.5;
     text-align: center;
     color: #181818;
     margin-bottom: 50px;
 }
 .hoops-description p {
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.7rem;
 }
 
 /* course-page footer */
+
 .course-page .footer {
     padding: 57px 0;
 }
@@ -1707,6 +1707,9 @@ h6 {
     .course-page .our-work-section {
         padding: 55px 0 90px;
     }
+    .free-bonus {
+        margin-bottom: 70px;
+    }
     .free-bonus .text-holder .col:nth-child(1) {
         width: 46%;
         margin: 0;
@@ -1842,12 +1845,19 @@ h6 {
         max-width: 100%;
         margin-left: 42px;
     }
+    .roi-section {
+        padding: 30px 0 102px;
+    }
     .roi-description {
         order: 1;
         font-size: 20px;
+        line-height: 1.6;
         padding: 90px 0 70px;
         max-width: 380px;
         text-align: left;
+    }
+    .roi-description p {
+        margin-bottom: 2rem;
     }
     .roi-img {
         order: 2;
@@ -1880,6 +1890,9 @@ h6 {
         margin: 0 20px 20px;
         padding: 35px 0 0;
     }
+    .results-section {
+        margin-bottom: 20px;
+    }
     .results-section .table {
         grid-template-columns: repeat(5, 1fr);
         max-width: 560px;
@@ -1911,7 +1924,7 @@ h6 {
         background: #F6F6F6;
         border-radius: 16px;
         margin: 0 20px;
-        padding: 80px 0;
+        padding: 82px 0 83px;
     }
     .table-total.total-right {
         font-size: 28px;
@@ -1927,9 +1940,15 @@ h6 {
     .alert-description {
         font-size: 22px;
         padding: 40px 20px 45px;
+        line-height: 1.64;
+        margin: 32px auto 50px;
     }
     .hoops-description {
         font-size: 22px;
+        line-height: 1.64;
+    }
+    .hoops-description p {
+        margin-bottom: 2.3rem;
     }
     .three-hoops-section {
         padding-bottom: 157px;
