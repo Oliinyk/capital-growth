@@ -1130,24 +1130,33 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .roi-section .title {
     max-width: 780px;
     margin: 0 auto;
 }
 .roi-description {
-    font-size: 20px;
+    font-size: 17px;
     color: #181818;
     line-height: 1.6;
     width: 100%;
-    max-width: 380px;
-    padding: 90px 0 70px;
+    max-width: 650px;
+    padding: 30px 0 0;
+    order: 2;
+    text-align: center;
+    margin: 0 auto;
 }
 .roi-description p {
     margin-bottom: 2rem;
 }
 .roi-section .section-img {
     max-width: 480px;
+    width: 100%;
+}
+.roi-img {
+    order: 1;
+    margin: 0 auto;
 }
 
 /* results-section */
@@ -1259,40 +1268,47 @@ h6 {
     position: relative;
     background-image: url('../images/underline.svg');
     background-repeat: no-repeat;
-    /* background-position: 75% calc(100% - 15px);
-    background-size: 90%; */
-
-    background-position: 20px calc(100% - 15px);
+    background-position: 20px calc(100% - 10px);
     background-size: 155px;
 }
 
 /* promotion-section */
+
 .promotion-section .promotion-wrap {
     background-color: #FFC230;
-    border-radius: 16px;
-    margin: 0 20px 20px;
-    padding: 70px 0 0;
-    /* background-image: url('../images/promotion-section.png'); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 45%; */
-    /* background-position: 31% 100%; */
+    padding: 35px 0 0;
 }
 .promotion-container {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 .promotion-container .section-img {
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    margin-top: -15%;
+}
+.promotion-img {
+    position: relative;
+    margin: 0 auto;
+}
+.promotion-img::after {
+    content: "";
     position: absolute;
     bottom: 0;
-    left: -133px;
-    max-width: 545px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFC230 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .promotion-section .promotion-description {
-    font-size: 20px;
-    grid-gap: 2rem;
-    max-width: 380px;
-    padding: 75px 0 50px;
-    margin: 0 0 0 auto;
+    font-size: 17px;
+    max-width: 650px;
+    padding: 25px 0 0;
+    margin: 0 auto;
+    text-align: center;
 }
 .promotion-section .promotion-description p {
     margin-bottom: 2rem;
@@ -1305,14 +1321,14 @@ h6 {
 }
 .three-hoops-section {
     background-color: #F6F6F6;
-    padding-bottom: 157px;
+    padding-bottom: 95px;
 }
 .alert-description {
     max-width: 780px;
     background-color: #fff;
-    padding: 40px 20px 45px;
+    padding: 35px 20px 40px;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 1.64;
     text-align: center;
     color: #181818;
@@ -1326,7 +1342,7 @@ h6 {
 }
 .hoops-description {
     text-align: center;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 1.64;
     text-align: center;
     color: #181818;
@@ -1361,7 +1377,7 @@ h6 {
 .course-page .footer .mail-name {
     color: #FFC230;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 @media (min-width: 575px) {
@@ -1826,9 +1842,44 @@ h6 {
         max-width: 100%;
         margin-left: 42px;
     }
-
-    /*  */
-
+    .roi-description {
+        order: 1;
+        font-size: 20px;
+        padding: 90px 0 70px;
+        max-width: 380px;
+        text-align: left;
+    }
+    .roi-img {
+        order: 2;
+        margin: 0;
+    }
+    .promotion-img {
+        position: initial;
+    }
+    .promotion-img::after {
+        display: none;
+    }
+    .promotion-container .section-img {
+        bottom: 0;
+        left: -6vw;
+        max-width: 80%;
+        position: absolute;
+        margin: 0;
+    }
+    .promotion-section .promotion-description {
+        font-size: 20px;
+        grid-gap: 2rem;
+        max-width: 380px;
+        padding: 75px 0 50px;
+        margin: 0 0 0 auto;
+        text-align: left;
+    }
+    .promotion-section .promotion-wrap {
+        background-color: #FFC230;
+        border-radius: 16px;
+        margin: 0 20px 20px;
+        padding: 35px 0 0;
+    }
     .results-section .table {
         grid-template-columns: repeat(5, 1fr);
         max-width: 560px;
@@ -1864,7 +1915,7 @@ h6 {
     }
     .table-total.total-right {
         font-size: 28px;
-        background-position: 75% calc(100% - 15px);
+        background-position: 75% calc(100% - 10px);
         background-size: 90%;
     }
     .table-total.total-left {
@@ -1872,6 +1923,25 @@ h6 {
     }
     .results-section .table > div {
         padding: 16px 25px;
+    }
+    .alert-description {
+        font-size: 22px;
+        padding: 40px 20px 45px;
+    }
+    .hoops-description {
+        font-size: 22px;
+    }
+    .three-hoops-section {
+        padding-bottom: 157px;
+    }
+    .course-page .footer .mail-name {
+        font-size: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .promotion-container .section-img {
+        left: -8vw;
+        max-width: 100%;
     }
 }
 
