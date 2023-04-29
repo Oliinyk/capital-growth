@@ -1156,24 +1156,23 @@ h6 {
 }
 .results-wrap {
     background: #F6F6F6;
-    border-radius: 16px;
-    margin: 0 20px;
-    padding: 80px 0;
 }
 .results-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+}
+.results-section .container {
     position: relative;
 }
 .results-row::after {
     position: absolute;
     content: '';
-    width: 90%;
-    height: 87%;
-    top: 50px;
+    width: 100%;
+    height: 60%;
+    top: 0;
     right: 0;
     background-color: #FFC230;
-    border-radius: 16px;
     z-index: 0;
 }
 .results-section .table .table-title {
@@ -1191,27 +1190,26 @@ h6 {
 }
 .results-section .table {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 560px;
-    border: 3px solid #fff;
+    grid-template-columns: 1fr 1fr;
     border-radius: 16px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.56;
     z-index: 1;
+    order: 2;
 }
 .results-section .table div:nth-child(odd) {
-    grid-column: 1 / 4;
     border-right: 1px solid #D3D3D3;
+    border-left: 3px solid #fff;
 }
 .results-section .table div:nth-child(even) {
-    grid-column: 4 / 6;
+    border-right: 3px solid #fff;
 }
 .results-section .table div:first-child {
     border-right: none;
-    margin-left: -3px;
+    border: none;
 }
 .results-section .table div:nth-child(2) {
-    margin-right: -3px;
+    border: none;
 }
 .results-section .table div:nth-last-child(-n+4) {
     border-bottom: 0;
@@ -1231,36 +1229,41 @@ h6 {
     padding: 7px 25px;
 }
 .results-section .table > div {
-    padding: 16px 25px;
+    padding: 12px 20px;
     background-color: #F6F6F6;
     border-bottom: 1px solid #D3D3D3;
 }
 .results-description {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
     line-height: 1.55;
     color: #181818;
-    max-width: 254px;
-    margin: auto;
+    max-width: 500px;
+    margin: 35px auto 35px;
     z-index: 1;
+    order: 1;
 }
 .table-total.total-left {
     border-radius: 0 0 0 16px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin: 10px 0 0;
 }
 .table-total.total-right {
     border-radius: 0 0 16px 0;
     color: #D52917;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 0;
     position: relative;
-    background-image: url(../images/underline.svg);
+    background-image: url('../images/underline.svg');
     background-repeat: no-repeat;
-    background-position: 100% calc(100% - 15px);
-    background-size: 95%;
+    /* background-position: 75% calc(100% - 15px);
+    background-size: 90%; */
+
+    background-position: 20px calc(100% - 15px);
+    background-size: 155px;
 }
 
 /* promotion-section */
@@ -1269,10 +1272,20 @@ h6 {
     border-radius: 16px;
     margin: 0 20px 20px;
     padding: 70px 0 0;
-    background-image: url('../images/promotion-section.png');
-    background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 31% 100%;
+    /* background-image: url('../images/promotion-section.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 45%; */
+    /* background-position: 31% 100%; */
+}
+.promotion-container {
+    display: flex;
+    position: relative;
+}
+.promotion-container .section-img {
+    position: absolute;
+    bottom: 0;
+    left: -133px;
+    max-width: 545px;
 }
 .promotion-section .promotion-description {
     font-size: 20px;
@@ -1741,6 +1754,9 @@ h6 {
     .free-bonus-three .free-bonus-item {
         padding-bottom: 77px;
     }
+    .results-description {
+        font-size: 40px;
+    }
 }
 @media (min-width: 992px) {
     .conversion-magic-page .wrap-pdf {
@@ -1809,6 +1825,53 @@ h6 {
         bottom: 0;
         max-width: 100%;
         margin-left: 42px;
+    }
+
+    /*  */
+
+    .results-section .table {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 560px;
+        font-size: 18px;
+        order: 1;
+    }
+    .results-section .table div:nth-child(odd) {
+        grid-column: 1 / 4;
+    }
+    .results-section .table div:nth-child(even) {
+        grid-column: 4 / 6;
+    }
+    .results-description {
+        text-align: left;
+        order: 2;
+        max-width: 254px;
+        margin: 0 auto;
+    }
+    .results-row {
+        position: relative;
+    }
+    .results-row::after {
+        width: 90%;
+        height: 87%;
+        top: 50px;
+        border-radius: 16px;
+    }
+    .results-wrap {
+        background: #F6F6F6;
+        border-radius: 16px;
+        margin: 0 20px;
+        padding: 80px 0;
+    }
+    .table-total.total-right {
+        font-size: 28px;
+        background-position: 75% calc(100% - 15px);
+        background-size: 90%;
+    }
+    .table-total.total-left {
+        font-size: 20px;
+    }
+    .results-section .table > div {
+        padding: 16px 25px;
     }
 }
 
