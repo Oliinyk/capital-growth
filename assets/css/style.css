@@ -906,11 +906,8 @@ h6 {
     line-height: 1.6;
     padding: 0 15px;
 }
-
 .profit-rises-section {
-    padding: 45px 0;
-    background: #F6F6F6;
-    margin: 20px 0 0;
+    padding: 0px 0 80px;
 }
 .profit-rises-inner {
     display: flex;
@@ -2010,7 +2007,7 @@ h6 {
         font-size: 19px;
     }
     .gross-profit-section {
-        padding: 60px 0 85px;
+        padding: 60px 0;
         text-align: center;
     }
     .gross-profit-section .title {
@@ -2058,11 +2055,11 @@ h6 {
     .instructors-name {
         margin: 38px 0 24px;
     }
-    .profit-rises-section {
+    /* .profit-rises-section {
         padding: 65px 0 70px;
         margin: 20px 20px 0;
         border-radius: 16px;
-    }
+    } */
     .profit-rises-section.ecommerce-sales .title {
         font-size: 44px;
     }
