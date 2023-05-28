@@ -60,6 +60,9 @@ h5,
 h6 {
     margin: 0;
 }
+.strike {
+    text-decoration: line-through;
+}
 .btn,
 #mc_embed_signup .modal-form .button.btn {
     font-family: 'Barlow', sans-serif;
@@ -686,7 +689,6 @@ h6 {
     margin-bottom: 1.75rem;
 }
 
-
 /* course-page */
 .course-page .hero {
     background-position: 0 0;
@@ -746,11 +748,11 @@ h6 {
     font-weight: 600;
     font-size: 17px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
 }
-.video-section .icon {
-    margin-bottom: 25px;
+.video-section .icon img {
+    margin: 30px auto 0;
 }
 .video-section .video-wrap {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);    
@@ -765,6 +767,75 @@ h6 {
     font-size: 17px;
     margin-top: 40px;
     line-height: 1.5;
+}
+.conversion-optimization-section {
+    padding: 85px 0 35px;
+    margin: 0 20px;
+    border-bottom: 1px solid #DBDBDB;
+}
+.conversion-optimization-section .text-section {
+    max-width: 625px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+.conversion-optimization-section .text-section .text-holder p {
+    font-size: 17px;
+}
+.conversion-optimization-section .text-section img {
+    margin: 40px auto;
+}
+
+.gross-profit-section {
+    padding: 40px 0;
+}
+.gross-profit-section .section-title {
+    margin-bottom: 25px;
+}
+.gross-profit-section .title {
+    margin-bottom: 25px;
+}
+.custom-underline {
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/underline-xs.svg");
+    background-repeat: no-repeat;
+    background-position: 100% calc(100% - 35px);
+    background-size: 100%;
+    padding-bottom: 40px;
+}
+.gross-profit-section .text-holder {
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 0 auto 35px;
+    max-width: 660px;
+    text-align: center;
+}
+.gross-profit-section .inner-link {
+    display: block;
+    text-align: center;
+}
+.gross-profit-section img {
+    margin: 0 auto;
+}
+.gross-profit-desktop {
+    display: none;
+}
+.gross-profit-mob {
+    display: block;
+}
+
+.inner-link {
+    color: #D52917;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.course-page .header {
+    display: block;
+}
+.course-page .our-work-section.our-work-top {
+    display: none;
 }
 .course-page .logo-section {
     padding-bottom: 60px;
@@ -788,7 +859,7 @@ h6 {
 }
 .instructors {
     background: #F6F6F6;
-    margin: 0;
+    margin: 0 15px;
     text-align: center;
     padding: 50px 0 20px;
 }
@@ -835,8 +906,98 @@ h6 {
     line-height: 1.6;
     padding: 0 15px;
 }
+
+.profit-rises-section {
+    padding: 45px 0;
+    background: #F6F6F6;
+    margin: 20px 0 0;
+}
+.profit-rises-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profit-rises-section .profit-col,
+.profit-rises-section .img-holder {
+    width: 100%;
+}   
+.profit-rises-section .title {
+    font-size: 24px;
+    text-align: center;
+    font-size: 17px;
+}
+.profit-rises-section .text-holder {
+    text-align: center;
+    color: #181818;
+    font-size: 17px;
+    line-height: 1.63;
+    display: none;
+}
+.profit-rises-section .text-holder.text-holder-mob {
+    display: block;
+    max-width: 411px;
+    margin: 30px auto 0;
+}
+.profit-rises-section .img-holder img {
+    margin: 0 auto;
+}
+.profit-rises-section .img-holder .description {
+    max-width: 411px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.profit-rises-section.ecommerce-sales .title {
+    text-align: center;
+}
+.profit-rises-section.ecommerce-sales .text-holder p {
+    margin-bottom: 30px;
+}
+.profit-rises-section.ecommerce-sales .description {
+    font-weight: 500;
+}
+
+.plus-lift-section {
+    padding: 50px 0 60px;
+    text-align: center;
+}
+.plus-lift-section .subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.plus-lift-section .text-holder {
+    max-width: 780px;
+    margin: 10px auto 55px;
+    font-size: 17px;
+    line-height: 1.63;
+}
+.plus-lift-section .logo-wrap {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+.plus-lift-section .logo-item {
+    padding: 10px 14px;
+    background: #F6F6F6;
+    border-radius: 16px;
+    width: 100%;
+    height: 160px;
+    max-width: 220px
+}
+.plus-lift-section .description {
+    font-size: 20px;
+    color: #181818;
+    margin: 43px auto 35px;
+}
+.plus-lift-section .icon img {
+    margin: 0 auto;
+}
+
 .bootcamp {
     padding: 33px 0 0px;
+    background: #F6F6F6;
 }
 .bootcamp-inner {
     display: flex;
@@ -871,6 +1032,81 @@ h6 {
     display: flex;
     justify-content: center;
 }
+
+/*  */
+
+.conversion-formula-section {
+    padding: 35px 0 70px;
+}
+.conversion-formula-section .inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conversion-formula-section .title {
+    margin-bottom: 35px;
+}
+.conversion-formula-section .img-holder {
+    text-align: center;
+    background: #F6F6F6;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    padding: 43px 24px 29px;
+    margin-bottom: 32px;
+}
+.conversion-formula-section .img-holder img {
+    margin: 0 auto 35px;
+}
+.conversion-formula-section .formula-col {
+    text-align: center;
+}
+.conversion-formula-section .formula-col .title-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.conversion-formula-section .formula-col .title-item img {
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto 20px;
+}
+.conversion-formula-section .formula-col .col-txt {
+    padding-left: 43px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.conversion-formula-section .logo-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.conversion-formula-section .img-holder .decr {
+    font-size: 18px;
+    line-height: 1.63;
+    margin-bottom: 17px;
+}
+.conversion-formula-section .img-holder .author-title {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.conversion-formula-section .img-holder .author-subtitle {
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+.conversion-formula-section .img-holder .author-txt {
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+
 .secret {
     background: #F6F6F6;
     border-radius: 16px;
@@ -901,10 +1137,40 @@ h6 {
     line-height: 1.5;
     margin-bottom: 34px;
 }
+
+.course-page .our-work-section.our-work-top {
+    padding: 38px 0 36px;
+}
+.course-page .our-work-section.our-work-top .section-title {
+    margin-bottom: 35px;
+}
+.course-page .hero,
+.course-page .hero + .text-section {
+    background-color: #F6F6F6;
+}
 .course-page .quote-section {
     background-color: #fff;
     padding: 35px 0 55px;
 }
+.quote-section.brand .quote-item:nth-child(odd) .author img {
+    border: 2px solid #FFC230;
+    max-width: 65px;
+}
+.quote-section.brand .quote img,
+.quote-testimonials-section .quote-logo-item {
+    margin: 0 auto 15px;
+}
+.quote-section.brand .author {
+    align-items: center;
+}
+.quote-testimonials-section .title {
+    margin-bottom: 35px;
+}
+.quote-testimonials-section .quote-logo-item img {
+    max-width: 175px;
+    margin: 0 auto;
+}
+
 .course-page .quote-section .section-title {
     color: #181818;
     font-weight: 700;
@@ -939,7 +1205,7 @@ h6 {
     filter: none;
 }
 .free-bonus {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .free-bonus-one .free-bonus-item {
     background: #E9F7EF;
@@ -1122,9 +1388,56 @@ h6 {
     line-height: 1.6;
 }
 
+/*  */
+.who-course-section .who-course-wrap {
+    background: #FFF8E7;
+    border: 3px solid rgba(255, 194, 48, 0.25);
+    border-radius: 16px;
+    padding: 40px 27px;
+    margin-bottom: 20px;
+}
+.who-course-section.not-for .who-course-wrap {
+    background: #F6F6F6;
+    border: 3px solid #E7E7E7;
+}
+.who-course-section .title {
+    color: #45340A;
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+.who-course-section .row-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 17px;
+    color: #45340A;
+    text-align: center;
+}
+.who-course-section .row-item p {
+    margin-bottom: 30px;
+}
+.who-course-section.not-for .title,
+.who-course-section.not-for .row-item {
+    color: #303030;
+}
+.who-course-section .row-item + .row-item {
+    margin-top: 45px;
+}
+.who-course-section .item-ico {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+}
+.who-course-section .course-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
 /* roi-section */
 .roi-section {
-    padding: 0 0 70px;
+    padding: 45px 0 70px;
 }
 .roi-wrap {
     display: flex;
@@ -1282,6 +1595,10 @@ h6 {
     flex-wrap: wrap;
     position: relative;
 }
+.promotion-section .title {
+    max-width: 780px;
+    margin: 0 auto;
+}
 .promotion-container .section-img {
     bottom: 0;
     left: 0;
@@ -1350,11 +1667,28 @@ h6 {
 .hoops-description p {
     margin-bottom: 1.7rem;
 }
+.hoops-description a {
+    color: #181818;
+    text-decoration: underline;
+}
+.money-back-holder {
+    text-align: center;
+    font-size: 20px;
+    padding: 43px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.money-back-holder p {
+    margin: 0 0 35px;
+    width: 100%;
+}
 
 /* course-page footer */
 
 .course-page .footer {
-    padding: 57px 0;
+    padding: 57px 0 0;
+    flex-wrap: wrap;
 }
 .course-page .footer .logo {
     text-align: center;
@@ -1378,6 +1712,21 @@ h6 {
     color: #FFC230;
     font-weight: 300;
     font-size: 24px;
+}
+.course-page .subsidiary {
+    background: #252525;
+    width: 100%;
+    padding: 59px 0 65px;
+    margin: 117px 0 0;
+}
+.course-page .subsidiary {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+.course-page .subsidiary p + p {
+    margin: 20px 0 0;
 }
 
 @media (min-width: 575px) {
@@ -1608,11 +1957,17 @@ h6 {
     .conversion-magic-page .hero {
         padding: 43px 0 13px;
     }
+    .course-page .header {
+        display: none;
+    }
+    .course-page .our-work-section.our-work-top {
+        display: block;
+    }
     .course-page .hero {
         padding: 57px 0 30px;
     }
     .course-page .hero .title {
-        margin: 0 0 10px;
+        margin: 0 0 70px;
         font-size: 44px;
     }
     .course-page .hero .subtitle {
@@ -1626,21 +1981,18 @@ h6 {
         margin-bottom: 45px;
     }
     .video-section {
-        padding: 60px 0 80px;
+        padding: 60px 0 50px;
     }
     .video-section .section-title {
         font-size: 44px;
-        margin: 0 auto 33px;
+        margin: 0 auto 25px;
     }
     .video-section .subtitle {
         font-size: 22px;
-        margin: 0 auto 34px;
+        margin: 0 auto 40px;
     }
     .video-section .bonus-text {
         font-size: 20px;
-    }
-    .video-section .icon {
-        margin-bottom: 40px;
     }
     .video-section .btn {
         margin-top: 50px;
@@ -1648,6 +2000,23 @@ h6 {
     .video-section .description {
         font-size: 20px;
     }
+    .conversion-optimization-section .text-section .text-holder p {
+        font-size: 19px;
+    }
+    .gross-profit-section {
+        padding: 80px 0;
+        text-align: center;
+    }
+    .gross-profit-section .title {
+        margin-bottom: 55px;
+    }
+    .gross-profit-desktop {
+        display: block;
+    }
+    .gross-profit-mob {
+        display: none;
+    }
+
     .course-page .logo-section {
         padding-bottom: 80px;
     }
@@ -1662,8 +2031,8 @@ h6 {
     }
     .instructors {
         padding: 70px 0 120px;
-        margin: 0 20px;
         border-radius: 16px;
+        margin: 0 20px;
     }
     .instructors .section-title {
         font-size: 44px;
@@ -1683,8 +2052,64 @@ h6 {
     .instructors-name {
         margin: 38px 0 24px;
     }
+    .profit-rises-section {
+        padding: 65px 0 70px;
+        margin: 20px 20px 0;
+        border-radius: 16px;
+    }
+    .profit-rises-section.ecommerce-sales .title {
+        font-size: 44px;
+    }
+    .profit-rises-section.ecommerce-sales .text-holder {
+        font-size: 19px;
+    }
+    .profit-rises-section .profit-col {
+        width: 40%;
+    }
+    .profit-rises-section .img-holder {
+        width: 60%;
+    }
+    .profit-rises-inner {
+        align-items: center;
+    }
+    .profit-rises-section .title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .profit-rises-section .text-holder {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 22px;
+        display: block;
+    }
+    .profit-rises-section .text-holder.text-holder-mob {
+        display: none;
+    }
+    .profit-rises-section .img-holder .description {
+        font-size: 16px;
+    }
+
+    .plus-lift-section {
+        padding: 85px 0 75px;
+    }
+    .plus-lift-section .text-holder {
+        font-size: 19px;
+        margin: 10px auto 55px;
+    }
+    .plus-lift-section .logo-wrap {
+        gap: 20px;
+        margin-bottom: 48px;
+    }
+    .plus-lift-section .logo-item {
+        height: 170px;
+    }
+
     .bootcamp {
-        padding: 33px 0 65px;
+        padding: 80px 0 75px;
+        border-radius: 16px;
+        margin: 0 20px;
     }
     .bootcamp .section-title,
     .secret .section-title {
@@ -1694,11 +2119,55 @@ h6 {
     .secret .text-holder p {
         font-size: 20px;
     }
+
+    .conversion-formula-section {
+        padding: 70px 0 85px;
+    }
+    .conversion-formula-section .inner-container {
+        justify-content: space-between;
+    }
+    .conversion-formula-section .title {
+        margin-bottom: 45px;
+    }
+    .conversion-formula-section .img-holder {
+        margin-bottom: 32px;
+    }
+    .conversion-formula-section .formula-col {
+        text-align: left;
+    }
+    .conversion-formula-section .img-holder .decr,
+    .conversion-formula-section .img-holder .author-title,
+    .conversion-formula-section .img-holder .author-subtitle {
+        font-size: 20px;
+    }
+    .conversion-formula-section .formula-col {
+        flex: 1;
+        padding-left: 2%;
+    }
+    .conversion-formula-section .formula-col .title-item {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        text-align: left;
+    }
+    .conversion-formula-section .formula-col .title-item img {
+        max-width: 30px;
+        margin-left: 0;
+        margin-right: 17px;
+        margin-bottom: 0;
+    }
+    .conversion-formula-section .formula-col .col-txt {
+        font-size: 19px;
+    }
+
     .secret {
         padding: 73px 0 40px;
     }
-    .course-page .quote-section {
-        padding: 75px 0 111px;
+    .course-page .quote-section.brand {
+        padding: 14px 0 100px;
+    }
+    .course-page .quote-section.thrilled-clients {
+        padding: 95px 0 73px;
     }
     .course-page .quote-section .section-title {
         font-size: 44px;
@@ -1706,9 +2175,6 @@ h6 {
     }
     .course-page .our-work-section {
         padding: 55px 0 90px;
-    }
-    .free-bonus {
-        margin-bottom: 70px;
     }
     .free-bonus .text-holder .col:nth-child(1) {
         width: 46%;
@@ -1773,8 +2239,26 @@ h6 {
     .free-bonus-three .free-bonus-item {
         padding-bottom: 77px;
     }
+    .who-course-section .title {
+        font-size: 41px;
+        margin-bottom: 60px;
+    }
     .results-description {
         font-size: 40px;
+    }
+    .course-page .quote-section.brand {
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .course-page .quote-section.brand .quote img,
+    .quote-testimonials-section .quote-logo-item {
+        margin: 0 0 28px;
+    }
+    .quote-testimonials-section .quote-logo-item img {
+        margin: 0;
+    }
+    .custom-underline {
+        padding-bottom: 50px;
     }
 }
 @media (min-width: 992px) {
@@ -1845,14 +2329,17 @@ h6 {
         max-width: 100%;
         margin-left: 42px;
     }
+    .roi-wrap {
+        padding: 25px 0 75px;
+    }
     .roi-section {
-        padding: 30px 0 102px;
+        padding: 30px 0 80px;
     }
     .roi-description {
         order: 1;
         font-size: 20px;
         line-height: 1.6;
-        padding: 90px 0 70px;
+        padding: 112px 0 0;
         max-width: 380px;
         text-align: left;
     }
@@ -1862,6 +2349,18 @@ h6 {
     .roi-img {
         order: 2;
         margin: 0;
+    }
+    .who-course-section .who-course-wrap {
+        padding: 43px 90px;
+    }
+    .who-course-section .row-item {
+        gap: 45px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .who-course-section .title {
+        text-align: left;
     }
     .promotion-img {
         position: initial;
@@ -1876,11 +2375,14 @@ h6 {
         position: absolute;
         margin: 0;
     }
+    .promotion-section .title {
+        margin: 0 auto 63px;
+    }
     .promotion-section .promotion-description {
         font-size: 20px;
         grid-gap: 2rem;
         max-width: 380px;
-        padding: 75px 0 50px;
+        padding: 42px 0 85px;
         margin: 0 0 0 auto;
         text-align: left;
     }
@@ -1888,7 +2390,7 @@ h6 {
         background-color: #FFC230;
         border-radius: 16px;
         margin: 0 20px 20px;
-        padding: 35px 0 0;
+        padding: 73px 0 0;
     }
     .results-section {
         margin-bottom: 20px;
@@ -1955,6 +2457,9 @@ h6 {
     }
     .course-page .footer .mail-name {
         font-size: 40px;
+    }
+    .conversion-formula-section .formula-col {
+        padding-left: 5%;
     }
 }
 @media (min-width: 1200px) {
