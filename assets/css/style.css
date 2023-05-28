@@ -1204,8 +1204,8 @@ h6 {
     filter: none;
     filter: none;
 }
-.free-bonus {
-    margin-bottom: 20px;
+.free-bonus + .free-bonus {
+    margin-top: 60px;
 }
 .free-bonus-one .free-bonus-item {
     background: #E9F7EF;
@@ -1394,11 +1394,16 @@ h6 {
     border: 3px solid rgba(255, 194, 48, 0.25);
     border-radius: 16px;
     padding: 40px 27px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .who-course-section.not-for .who-course-wrap {
     background: #F6F6F6;
     border: 3px solid #E7E7E7;
+}
+.who-course-section.not-for {
+    margin-top: 0;
+    margin-bottom: 55px;
 }
 .who-course-section .title {
     color: #45340A;
@@ -1682,6 +1687,7 @@ h6 {
 .money-back-holder p {
     margin: 0 0 35px;
     width: 100%;
+    font-weight: 400;
 }
 
 /* course-page footer */
@@ -1716,8 +1722,8 @@ h6 {
 .course-page .subsidiary {
     background: #252525;
     width: 100%;
-    padding: 59px 0 65px;
-    margin: 117px 0 0;
+    padding: 50px 0;
+    margin: 103px 0 0;
 }
 .course-page .subsidiary {
     color: #fff;
@@ -1964,10 +1970,10 @@ h6 {
         display: block;
     }
     .course-page .hero {
-        padding: 57px 0 30px;
+        padding: 52px 0 30px;
     }
     .course-page .hero .title {
-        margin: 0 0 70px;
+        margin: 0;
         font-size: 44px;
     }
     .course-page .hero .subtitle {
@@ -2004,7 +2010,7 @@ h6 {
         font-size: 19px;
     }
     .gross-profit-section {
-        padding: 80px 0;
+        padding: 60px 0 85px;
         text-align: center;
     }
     .gross-profit-section .title {
@@ -2030,7 +2036,7 @@ h6 {
         max-height: 100%;
     }
     .instructors {
-        padding: 70px 0 120px;
+        padding: 77px 0 120px;
         border-radius: 16px;
         margin: 0 20px;
     }
@@ -2130,7 +2136,7 @@ h6 {
         margin-bottom: 45px;
     }
     .conversion-formula-section .img-holder {
-        margin-bottom: 32px;
+        margin-bottom: 0;
     }
     .conversion-formula-section .formula-col {
         text-align: left;
@@ -2168,6 +2174,12 @@ h6 {
     }
     .course-page .quote-section.thrilled-clients {
         padding: 95px 0 73px;
+    }
+    .course-page .quote-section.quote-testimonials-section {
+        padding: 73px 0 92px;
+    }
+    .course-page .quote-section.quote-testimonials-section .title {
+        margin-bottom: 67px;
     }
     .course-page .quote-section .section-title {
         font-size: 44px;
@@ -2246,7 +2258,7 @@ h6 {
     .results-description {
         font-size: 40px;
     }
-    .course-page .quote-section.brand {
+    .course-page .quote-section {
         font-weight: 300;
         font-size: 20px;
     }
@@ -2277,6 +2289,7 @@ h6 {
     }
     .bootcamp .img-holder {
         width: 55%;
+        margin: 25px 0 0;
     }
     .bootcamp .img-wrap {
         position: absolute;
@@ -2333,7 +2346,7 @@ h6 {
         padding: 25px 0 75px;
     }
     .roi-section {
-        padding: 30px 0 80px;
+        padding: 50px 0 80px;
     }
     .roi-description {
         order: 1;
@@ -2361,6 +2374,12 @@ h6 {
     }
     .who-course-section .title {
         text-align: left;
+    }
+    .who-course-section.not-for {
+        margin-bottom: 95px;
+    }
+    .who-course-section.not-for .who-course-wrap {
+        margin-bottom: 40px;
     }
     .promotion-img {
         position: initial;
@@ -2453,7 +2472,7 @@ h6 {
         margin-bottom: 2.3rem;
     }
     .three-hoops-section {
-        padding-bottom: 157px;
+        padding-bottom: 112px;
     }
     .course-page .footer .mail-name {
         font-size: 40px;
