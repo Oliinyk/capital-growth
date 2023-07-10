@@ -906,8 +906,11 @@ h6 {
     line-height: 1.6;
     padding: 0 15px;
 }
+
 .profit-rises-section {
-    padding: 0px 0 80px;
+    padding: 45px 0;
+    background: #F6F6F6;
+    margin: 20px 0 0;
 }
 .profit-rises-inner {
     display: flex;
@@ -1158,7 +1161,7 @@ h6 {
     margin: 0 auto 15px;
 }
 .quote-section.brand .author {
-    align-items: center;
+    gap: 1.2rem;
 }
 .quote-testimonials-section .title {
     margin-bottom: 35px;
@@ -1201,8 +1204,8 @@ h6 {
     filter: none;
     filter: none;
 }
-.free-bonus + .free-bonus {
-    margin-top: 60px;
+.free-bonus {
+    margin-bottom: 20px;
 }
 .free-bonus-one .free-bonus-item {
     background: #E9F7EF;
@@ -1391,16 +1394,11 @@ h6 {
     border: 3px solid rgba(255, 194, 48, 0.25);
     border-radius: 16px;
     padding: 40px 27px;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .who-course-section.not-for .who-course-wrap {
     background: #F6F6F6;
     border: 3px solid #E7E7E7;
-}
-.who-course-section.not-for {
-    margin-top: 0;
-    margin-bottom: 55px;
 }
 .who-course-section .title {
     color: #45340A;
@@ -1684,7 +1682,6 @@ h6 {
 .money-back-holder p {
     margin: 0 0 35px;
     width: 100%;
-    font-weight: 400;
 }
 
 /* course-page footer */
@@ -1719,8 +1716,8 @@ h6 {
 .course-page .subsidiary {
     background: #252525;
     width: 100%;
-    padding: 50px 0;
-    margin: 103px 0 0;
+    padding: 59px 0 65px;
+    margin: 117px 0 0;
 }
 .course-page .subsidiary {
     color: #fff;
@@ -1730,6 +1727,151 @@ h6 {
 }
 .course-page .subsidiary p + p {
     margin: 20px 0 0;
+}
+
+/* try-it-free-page */
+
+.try-it-free-page .strategy-section {
+    border: none;
+    padding: 0 0 60px;
+}
+.try-it-free-page .strategy-section .title {
+    font-size: 44px;
+    margin-bottom: 0;
+}
+.try-it-free-page .strategy-section .subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.try-it-free-page .hero {
+    background-size: 100% 93%;
+    background-position: 0 0;
+    padding: 30px 0 17px;
+}
+.try-it-free-page .hero .container {
+    max-width: 970px;
+}
+.try-it-free-page .hero .title {
+    max-width: 810px;
+    margin: 0 auto 40px;
+}
+.try-it-free-page .hero .subtitle {
+    max-width: 720px;
+    margin: 0 auto 12px;
+    line-height: 1.7;
+}
+.try-it-free-page .video-wrap {
+    max-width: 100%;
+    border: 3px solid #fff;
+}
+.try-it-free-page .high-converting-form {
+    width: 100%;
+    max-width: 392px;
+    margin: 0 auto;
+}
+.try-it-free-page .high-converting-form .iti {
+    width: 100%;
+}
+.try-it-free-page .high-converting-form .iti__selected-flag {
+    background: #fff;
+    padding: 0 18px 0 18px;
+    border-radius: 3px 0px 0px 3px;
+    border: 1px solid #DDD;
+    border-right: 2px solid #DDD;
+}
+.try-it-free-page .high-converting-form .iti__arrow {
+    margin: -3px 0 0 13px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(-135deg);
+}
+.try-it-free-page .high-converting-form .iti__arrow.iti__arrow--up {
+    transform: rotate(45deg);
+    margin: 0 0 0 13px;
+}
+.try-it-free-page .high-converting-form .iti__country-list {
+    max-width: 392px;
+    overflow-x: hidden;
+    z-index: 9;
+}
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group input {
+    border-radius: 3px;
+    border: 2px solid #DDD;
+    background: #F6F6F6;
+    color: #7A7A7A;
+    font-family: Barlow;
+    font-size: 18px;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 100px;
+}
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group + .mc-field-group {
+    margin-top: 20px;
+}
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group:first-child input {
+    padding: 17px 20px;
+}
+.try-it-free-page .high-converting-form .btn {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 26px 17px;
+}
+
+.try-it-free-page .quote-section {
+    background-color: #fff;
+    padding: 0 0 38px;
+}
+.try-it-free-page .quote-section .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.try-it-free-page .quote-section .quote-item {
+    max-width: 460px;
+}
+.try-it-free-page .quote-section.brand .quote .quote-img {
+    display: flex;
+    align-items: center;
+    /*height: 82px;*/
+    margin: 0 auto 20px;
+}
+.try-it-free-page .quote-section.brand .quote {
+    display: flex;
+    flex-direction: column;
+}
+.try-it-free-page .quote-section.brand .author {
+    gap: 0.7rem;
+}
+.try-it-free-page .author-info p {
+    max-width: 230px;
+    margin: 0 auto;
+}
+.try-it-free-page .quote-section.brand .quote img {
+    margin: 0;
+    height: 100%;
+}
+.try-it-free-page .quote-section.brand .quote img.cotopaxi-logo {
+    max-height: 49px;
+}
+
+.try-it-free-page .quote-section.brand .quote-item .author img {
+    border: none;
+}
+.try-it-free-page .quote-section.brand .quote-item:last-child .author img {
+    border: 2px solid #FFC230;
+}
+.try-it-free-page .conversion-formula-section {
+    padding: 0 0 18px;
+}
+.try-it-free-page .conversion-formula-section .img-holder .main-img img {
+    width: 100%;
+    max-width: 378px;
 }
 
 @media (min-width: 575px) {
@@ -1967,10 +2109,10 @@ h6 {
         display: block;
     }
     .course-page .hero {
-        padding: 52px 0 30px;
+        padding: 57px 0 30px;
     }
     .course-page .hero .title {
-        margin: 0;
+        margin: 0 0 70px;
         font-size: 44px;
     }
     .course-page .hero .subtitle {
@@ -2007,7 +2149,7 @@ h6 {
         font-size: 19px;
     }
     .gross-profit-section {
-        padding: 60px 0;
+        padding: 80px 0;
         text-align: center;
     }
     .gross-profit-section .title {
@@ -2033,7 +2175,7 @@ h6 {
         max-height: 100%;
     }
     .instructors {
-        padding: 77px 0 120px;
+        padding: 70px 0 120px;
         border-radius: 16px;
         margin: 0 20px;
     }
@@ -2055,11 +2197,11 @@ h6 {
     .instructors-name {
         margin: 38px 0 24px;
     }
-    /* .profit-rises-section {
+    .profit-rises-section {
         padding: 65px 0 70px;
         margin: 20px 20px 0;
         border-radius: 16px;
-    } */
+    }
     .profit-rises-section.ecommerce-sales .title {
         font-size: 44px;
     }
@@ -2133,7 +2275,7 @@ h6 {
         margin-bottom: 45px;
     }
     .conversion-formula-section .img-holder {
-        margin-bottom: 0;
+        margin-bottom: 32px;
     }
     .conversion-formula-section .formula-col {
         text-align: left;
@@ -2171,12 +2313,6 @@ h6 {
     }
     .course-page .quote-section.thrilled-clients {
         padding: 95px 0 73px;
-    }
-    .course-page .quote-section.quote-testimonials-section {
-        padding: 73px 0 92px;
-    }
-    .course-page .quote-section.quote-testimonials-section .title {
-        margin-bottom: 67px;
     }
     .course-page .quote-section .section-title {
         font-size: 44px;
@@ -2255,7 +2391,7 @@ h6 {
     .results-description {
         font-size: 40px;
     }
-    .course-page .quote-section {
+    .course-page .quote-section.brand {
         font-weight: 300;
         font-size: 20px;
     }
@@ -2268,6 +2404,146 @@ h6 {
     }
     .custom-underline {
         padding-bottom: 50px;
+    }
+
+    /*  try-it-free-page  */
+    .try-it-free-page .hero {
+        background-size: 100% 65%;
+        background-position: 0 0;
+        padding: 43px 0 32px;
+    }
+    .try-it-free-page .hero .title {
+        margin: 0 auto 45px;
+    }
+    .try-it-free-page .hero .subtitle {
+        margin: 0 auto 22px;
+        line-height: 1.5;
+    }
+    .try-it-free-page .video-wrap {
+        border: 10px solid #fff;
+    }
+    .try-it-free-page .strategy-section .subtitle {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    .try-it-free-page .strategy-section {
+        padding: 0 0 74px;
+    }
+    .try-it-free-page .high-converting-form {
+        width: 100%;
+        max-width: 392px;
+        margin: 0 auto;
+    }
+    .try-it-free-page .high-converting-form .iti {
+        width: 100%;
+    }
+    .try-it-free-page .high-converting-form .iti__selected-flag {
+        background: #fff;
+        padding: 0 18px 0 18px;
+        border-radius: 3px 0px 0px 3px;
+        border: 1px solid #DDD;
+        border-right: 2px solid #DDD;
+    }
+    .try-it-free-page .high-converting-form .iti__arrow {
+        margin: -3px 0 0 13px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        border-right: 0;
+        border-bottom: 0;
+        transform: rotate(-135deg);
+    }
+    .try-it-free-page .high-converting-form .iti__arrow.iti__arrow--up {
+        transform: rotate(45deg);
+        margin: 0 0 0 13px;
+    }
+    .try-it-free-page .high-converting-form .iti__country-list {
+        max-width: 392px;
+        overflow-x: hidden;
+        z-index: 9;
+    }
+    .try-it-free-page .strategy-section .high-converting-form .mc-field-group input {
+        border-radius: 3px;
+        border: 2px solid #DDD;
+        background: #F6F6F6;
+        color: #7A7A7A;
+        font-family: Barlow;
+        font-size: 18px;
+        width: 100%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 100px;
+    }
+    .try-it-free-page .strategy-section .high-converting-form .mc-field-group + .mc-field-group {
+        margin-top: 20px;
+    }
+    .try-it-free-page .strategy-section .high-converting-form .mc-field-group:first-child input {
+        padding: 17px 20px;
+    }
+    .try-it-free-page .high-converting-form .btn {
+        margin-top: 30px;
+    }
+
+    .try-it-free-page .quote-section {
+        padding: 0 0 65px;
+        font-size: 20px;
+    }
+    .try-it-free-page .quote-section .title {
+        font-size: 44px;
+        margin-bottom: 34px;
+    }
+    .try-it-free-page .quote-section.brand .quote .quote-img {
+        margin: 0 0 20px;
+        height: 82px;
+    }
+    .try-it-free-page .quote-section .quote-wrap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+    .try-it-free-page .quote-section .author {
+        margin-top: 23px;
+        max-width: 285px;
+        align-items: flex-start;
+    }
+    .try-it-free-page .quote-section .quote-item:last-child .author {
+        max-width: 200px;
+    }
+    .try-it-free-page .quote-section .author-info {
+        margin-top: 10px;
+    }
+    .try-it-free-page .quote-section.brand .author {
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .try-it-free-page .quote-section.brand .author-info p {
+        max-width: 100%;
+    }
+
+    /* conversion-formula-section */
+    .try-it-free-page .conversion-formula-section {
+        padding: 0 0 90px;
+    }
+    .try-it-free-page .conversion-formula-section .text-holder {
+        flex: 0 0 50%;
+        order: 1;
+        padding: 0 40px 0 20px;
+    }
+    .try-it-free-page .conversion-formula-section .img-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+        padding: 46px 60px 46px;
+    }
+    .try-it-free-page .conversion-formula-section .img-holder .main-img {
+        margin: 0;
+        flex: 0 0 50%;
+        order: 2;
+    }
+    .try-it-free-page .conversion-formula-section .img-holder .main-img img {
+        margin: 0 0 0 auto;
     }
 }
 @media (min-width: 992px) {
@@ -2286,7 +2562,6 @@ h6 {
     }
     .bootcamp .img-holder {
         width: 55%;
-        margin: 25px 0 0;
     }
     .bootcamp .img-wrap {
         position: absolute;
@@ -2343,7 +2618,7 @@ h6 {
         padding: 25px 0 75px;
     }
     .roi-section {
-        padding: 50px 0 80px;
+        padding: 30px 0 80px;
     }
     .roi-description {
         order: 1;
@@ -2371,12 +2646,6 @@ h6 {
     }
     .who-course-section .title {
         text-align: left;
-    }
-    .who-course-section.not-for {
-        margin-bottom: 95px;
-    }
-    .who-course-section.not-for .who-course-wrap {
-        margin-bottom: 40px;
     }
     .promotion-img {
         position: initial;
@@ -2469,7 +2738,7 @@ h6 {
         margin-bottom: 2.3rem;
     }
     .three-hoops-section {
-        padding-bottom: 112px;
+        padding-bottom: 157px;
     }
     .course-page .footer .mail-name {
         font-size: 40px;
