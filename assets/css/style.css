@@ -1845,6 +1845,9 @@ h6 {
     max-width: 100%;
     padding: 26px 17px;
 }
+.try-it-free-page .high-converting-form .btn:hover {
+    background-color: #ffb400;
+}
 
 .try-it-free-page .quote-section {
     background-color: #fff;
