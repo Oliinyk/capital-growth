@@ -1800,7 +1800,8 @@ h6 {
     overflow-x: hidden;
     z-index: 9;
 }
-.try-it-free-page .strategy-section .high-converting-form .mc-field-group input {
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group input,
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group select {
     border-radius: 3px;
     border: 2px solid #DDD;
     background: #F6F6F6;
@@ -1808,6 +1809,21 @@ h6 {
     font-family: Barlow;
     font-size: 18px;
     width: 100%;
+    padding: 17px 20px;
+    color: #303030;
+}
+
+.try-it-free-page .strategy-section .high-converting-form .mc-field-group select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 20px;
+    background-size: 18px 18px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVR4nO3YSwrCMBRG4eMOVQwZ6OoVQfGxgQqVQgsiSe0zucX/QGdJuR+hgxSUUkoppZTqmQPuwBlYY68NcAGegI8tWgE3oKyfom1xhnw9UzPfo5452PVjoSWM/0KU9azRtoENuTE+MlM1a2u7wMYXcCDPN1sEZtl3fYEFjBuLsIBxUyFyYtzUiBwYNxciJWZ2RApMMsScmOSIOTDZEFNisiOmwJhBjMGYQwzBmEX0wZhHdMEsBvHr7mDtjjP4ZBZzEl0xi0LEMItENFW/lE7A0ejvJaWUUkop9U+9AdnJ7S7GX9jsAAAAAElFTkSuQmCC");
+}
+.try-it-free-page .high-converting-form .mc-field-group .iti input {
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 100px;
@@ -1815,8 +1831,14 @@ h6 {
 .try-it-free-page .strategy-section .high-converting-form .mc-field-group + .mc-field-group {
     margin-top: 20px;
 }
-.try-it-free-page .strategy-section .high-converting-form .mc-field-group:first-child input {
-    padding: 17px 20px;
+.try-it-free-page .strategy-section .high-converting-form label {
+    display: block;
+    color: #181818;
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 .try-it-free-page .high-converting-form .btn {
     margin-top: 30px;
@@ -2463,28 +2485,6 @@ h6 {
         overflow-x: hidden;
         z-index: 9;
     }
-    .try-it-free-page .strategy-section .high-converting-form .mc-field-group input {
-        border-radius: 3px;
-        border: 2px solid #DDD;
-        background: #F6F6F6;
-        color: #7A7A7A;
-        font-family: Barlow;
-        font-size: 18px;
-        width: 100%;
-        padding-top: 17px;
-        padding-bottom: 17px;
-        padding-left: 100px;
-    }
-    .try-it-free-page .strategy-section .high-converting-form .mc-field-group + .mc-field-group {
-        margin-top: 20px;
-    }
-    .try-it-free-page .strategy-section .high-converting-form .mc-field-group:first-child input {
-        padding: 17px 20px;
-    }
-    .try-it-free-page .high-converting-form .btn {
-        margin-top: 30px;
-    }
-
     .try-it-free-page .quote-section {
         padding: 0 0 65px;
         font-size: 20px;
